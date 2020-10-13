@@ -12,7 +12,6 @@ jobs:
       output2: ${{ steps.step2.outputs.test }}
     steps:
     env:
-      DEFAULT_BRANCH: zfy-dev
     - id: step1
       run: echo "::set-output name=test::hello"
     - id: step2
